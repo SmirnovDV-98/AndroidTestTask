@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please, set your birth date in format as in brackets (dd.mm.yyyy)if field below: "
+        android:textColor="#0A2BE4"
+        android:textColorHighlight="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataLayout"
+        android:layout_marginLeft="7pt"
+        android:layout_marginRight="7pt"
+        android:layout_marginTop="3pt">
+
+        <EditText
+            android:id="@+id/dayET"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="5pt"
+            android:layout_weight="1"
+            android:digits="0123456789."
+            android:inputType="number"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLayout"
+        android:layout_marginTop="7pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt">
+
+        <Button
+            android:id="@+id/btnResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickResult"
+            android:text="Show  Result"
+            android:textSize="5pt"></Button>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickClear"
+            android:text="Clear    date"
+            android:textSize="5pt"></Button>
+
+        <Button
+            android:id="@+id/btnChangeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickLayout"
+            android:text="Change style"
+            android:textSize="5pt"></Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_marginLeft="5pt"
+        android:layout_marginTop="3pt"
+        android:layout_marginRight="5pt"
+        android:gravity="center_horizontal"
+        android:textSize="12pt"
+        android:textColor="@color/black"></TextView>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    android:orientation = "vertical"
+    android:id ="@+id/altLayout"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Set birth date:"
+            android:textColor="#0C0C0C"
+            android:textColorHint="#100F0F"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Birth day:" />
+
+                <Spinner
+                    android:layout_weight="0.2"
+                    android:id="@+id/daySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Month:" />
+
+                <Spinner
+                    android:layout_weight="0.2"
+                    android:id="@+id/monthSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Year"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:layout_weight="0.2"
+                    android:id="@+id/yearSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClickResult"
+                android:text="Show Result"
+                android:textSize="5pt"></Button>
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClickClear"
+                android:text="Clear date"
+                android:textSize="5pt">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btnChangeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClickLayout"
+                android:text="Change style"
+                android:textSize="5pt">
+
+            </Button>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="3pt"
+            android:layout_marginRight="5pt"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="12pt"></TextView>
+    </LinearLayout>
+
+
+</LinearLayout>
